@@ -1,0 +1,42 @@
+.container .main-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+    margin: 3rem 10rem;
+    gap: 5rem;
+}
+
+@media only screen and (max-width: 1124px) {
+    .container .main-content {
+        margin: 3rem;
+    }
+}
+
+.container .main-content .blog {
+    flex: 3;
+}
+
+.container .main-content .sidebar {
+    flex: 1;
+}
+
+.container .main-content .blog .post {
+    display: flex;
+    background-color: var(#ffffff);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 5rem;
+    position: relative;
+    min-height: 30rem;
+}
+
+.container .main-content .blog .post .post-image {
+    min-height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.container .main-content .blog .post:hover .post-image img {
+    transition: scale(1.5);
+    transition: 0.3s;
+}
